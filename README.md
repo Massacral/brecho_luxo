@@ -1,85 +1,126 @@
-# 🛍️ Brechó de Luxo — E-commerce de Moda e Peças Selecionadas
+# 🛍️ Luxe Vintage | Brechó de Luxo — E-commerce Full Stack
 
-**React • JavaScript • Styled Components • Node.js • Express • MySQL • API REST**
+**React 18 • JavaScript • React Router • Styled Components • Framer Motion • Node.js • Express • MySQL**
 
-O **Brechó de Luxo** é um projeto independente de aplicação web voltada ao comércio eletrônico de moda e peças selecionadas. Desenvolvido como parte de um portfólio Full Stack, o projeto explora a construção de interfaces com React e uma estrutura tecnológica preparada para integração com serviços backend e banco de dados relacional.
+O **Luxe Vintage — Brechó de Luxo** é um projeto independente de e-commerce dedicado à apresentação de peças de moda e acessórios de luxo de segunda mão. A aplicação combina uma identidade visual sofisticada em preto e dourado com navegação por coleções, catálogo de produtos e conteúdo educativo sobre conservação de peças.
 
-🌐 **[Acessar demonstração online](https://brecho-luxo.vercel.app/)**
+🌐 **[Acessar a demonstração online](https://brecho-luxo.vercel.app/)**
 
-## ✨ Visão geral
+## 📸 Demonstração visual
 
-O projeto busca apresentar uma experiência digital de compra com identidade visual própria e navegação orientada à apresentação de produtos. A demonstração pública permite conhecer a interface disponível no ambiente hospedado.
+As imagens abaixo foram capturadas da interface da aplicação.
 
-> **Nota sobre a documentação:** as tecnologias abaixo foram identificadas no `package.json` do projeto. O arquivo recebido não incluía os diretórios de implementação (`src` e `server`), portanto fluxos como pagamento, autenticação e finalização de pedidos não foram validados nesta análise.
+### 🏠 Página inicial — Peças exclusivas
+
+Banner principal com destaque para a curadoria de peças e chamada para explorar a coleção.
+
+<p align="center"><img src="screenshots/home-pecas-exclusivas.jpg" width="850" alt="🏠 Página inicial — Peças exclusivas"></p>
+
+### ♻️ Página inicial — Luxo sustentável
+
+Outra apresentação do carrossel, destacando moda consciente e estilo atemporal.
+
+<p align="center"><img src="screenshots/home-luxo-sustentavel.jpg" width="850" alt="♻️ Página inicial — Luxo sustentável"></p>
+
+### ✨ Página inicial — Atemporalidade
+
+Terceira apresentação visual do carrossel da página inicial.
+
+<p align="center"><img src="screenshots/home-atemporalidade.jpg" width="850" alt="✨ Página inicial — Atemporalidade"></p>
+
+### 🛍️ Coleção de produtos
+
+Catálogo com categorias, ordenação, imagens, marcas, preços, estado de conservação e acesso aos detalhes dos produtos.
+
+<p align="center"><img src="screenshots/colecao.jpg" width="850" alt="🛍️ Coleção de produtos"></p>
+
+### 🧴 Guia de cuidados
+
+Conteúdo interativo organizado por tipo de peça e assunto, com orientações de conservação.
+
+<p align="center"><img src="screenshots/guia-cuidados.jpg" width="850" alt="🧴 Guia de cuidados"></p>
+
+### 📖 Sobre a marca
+
+Página institucional que apresenta a proposta e a identidade da marca fictícia Luxe Vintage.
+
+<p align="center"><img src="screenshots/sobre.jpg" width="850" alt="📖 Sobre a marca"></p>
+
+### ✉️ Contato
+
+Informações de contato e formulário de mensagem apresentados na interface.
+
+<p align="center"><img src="screenshots/contato.jpg" width="850" alt="✉️ Contato"></p>
 
 ## 🎯 Objetivo
 
-Aplicar conhecimentos de desenvolvimento web na construção de uma solução de e-commerce, com ênfase em componentes reutilizáveis, experiência de navegação, organização de interfaces e integração entre frontend e serviços de dados.
+Desenvolver uma experiência de comércio eletrônico com **React**, combinando componentes de interface, navegação, apresentação de produtos e identidade visual própria, além de explorar uma estrutura tecnológica com serviços Node.js e banco de dados relacional.
 
-## 🧩 Tecnologias utilizadas
+## 🚀 Funcionalidades apresentadas
+
+- **Página inicial** com carrossel de banners, mensagens de marca e acesso à coleção.
+- **Catálogo de produtos** com categorias como acessórios, bolsas, relógios, vestuário, calçados, joias e óculos.
+- **Listagem de produtos** com foto, marca, descrição resumida, preço, condição da peça e botão para visualizar detalhes.
+- **Controles de filtragem e ordenação** apresentados na página da coleção.
+- **Guia de cuidados** com seleção de categorias e orientações sobre conservação.
+- **Página Sobre** com apresentação da proposta da Luxe Vintage.
+- **Página Contato** com informações e formulário de mensagem.
+- **Navegação** com acesso a coleção, guia de cuidados, páginas institucionais e ícones de busca, conta e sacola.
+
+> As capturas comprovam a presença desses elementos na interface, mas não validam operações como autenticação, envio de mensagens, checkout ou pagamento.
+
+## 🛠️ Tecnologias
 
 | Camada | Tecnologias identificadas |
 | --- | --- |
-| Interface | React 18, JavaScript |
-| Navegação | React Router DOM |
+| Frontend | React 18, JavaScript |
+| Rotas | React Router DOM |
 | Estilização | Styled Components |
 | Animações | Framer Motion |
-| Ícones e notificações | React Icons, React Hot Toast |
-| Comunicação HTTP | Axios |
-| Servidor | Node.js, Express |
+| Interface | React Icons, React Hot Toast |
+| Requisições HTTP | Axios |
+| Backend | Node.js, Express |
 | Banco de dados | MySQL, MySQL2 |
-| Bibliotecas de autenticação | JSON Web Token (JWT), bcryptjs |
-| Configuração e integração | CORS, dotenv |
+| Dependências de autenticação | JWT, bcryptjs |
+| Configuração | CORS, dotenv |
 | Hospedagem da demonstração | Vercel |
 | Versionamento | Git e GitHub |
 
-## 🏗️ Estrutura técnica
+*As tecnologias foram identificadas no `package.json` disponibilizado para documentação. A execução ponta a ponta dos serviços não foi verificada.*
 
-A configuração do projeto indica uma arquitetura com interface React e servidor Node.js/Express, além de dependências para acesso a MySQL.
+## 🧩 Arquitetura prevista
 
 ```text
-                  Usuário
-                     |
-               Interface React
-                     |
-               Axios / HTTP
-                     |
-              API Node.js
-                 Express
-                     |
-                  MySQL
+Navegador
+   │
+   ▼
+Interface React
+   │
+   ▼
+Requisições HTTP / Axios
+   │
+   ▼
+API Node.js + Express
+   │
+   ▼
+Banco de dados MySQL
 ```
 
-*Diagrama conceitual baseado nas dependências e scripts do projeto; não representa uma verificação completa do ambiente em produção.*
+*Representação conceitual da stack identificada; não implica que todos os serviços estejam ativos na demonstração pública.*
 
-## 💡 Conhecimentos aplicados
+## 💡 Competências demonstradas
 
-- Desenvolvimento de aplicações web com React e JavaScript
-- Estruturação de interfaces em componentes
-- Navegação com React Router
-- Estilização com Styled Components
-- Animações de interface com Framer Motion
-- Organização de um projeto com frontend e backend
-- Uso de bibliotecas para requisições HTTP e integração com banco de dados
-- Configuração de scripts de desenvolvimento e build
+Construção de interfaces com React, organização de páginas e componentes, estilização, navegação, experiência de catálogo, apresentação de informações de produtos e estruturação de um projeto com tecnologias de frontend e backend.
 
-## 🌐 Demonstração
+## 🌐 Testar o projeto
 
-**[Abrir Brechó de Luxo](https://brecho-luxo.vercel.app/)**
+**[Abrir Luxe Vintage — Brechó de Luxo](https://brecho-luxo.vercel.app/)**
 
-A versão hospedada é destinada à apresentação do projeto no portfólio. A disponibilidade e o funcionamento de recursos específicos dependem do ambiente de demonstração.
-
-## 📸 Capturas de tela
-
-As capturas de tela da aplicação serão adicionadas aqui para apresentar visualmente a página inicial, a navegação e as principais experiências disponíveis.
-
-<!-- Após enviar imagens para a pasta screenshots/, adicione referências como:
-![Página inicial do Brechó de Luxo](screenshots/inicio.png)
--->
+A demonstração pode apresentar limitações conforme a disponibilidade dos serviços hospedados.
 
 ## 🔒 Código-fonte
 
-O código-fonte completo é mantido em repositório privado. Este repositório público reúne a documentação e o acesso à demonstração, preservando a implementação original.
+O código-fonte completo é mantido em repositório privado. Este repositório público apresenta a documentação, as capturas de tela e o link da demonstração, sem divulgar a implementação original.
 
 ## 👨‍💻 Desenvolvedor
 
@@ -90,4 +131,4 @@ Técnico em Desenvolvimento de Sistemas • Desenvolvedor Full Stack
 
 ---
 
-*Projeto independente apresentado como parte de um portfólio de desenvolvimento web.*
+*Projeto independente desenvolvido para demonstração de competências em desenvolvimento web.*
